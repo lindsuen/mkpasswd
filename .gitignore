@@ -1,0 +1,19 @@
+# Github
+.github/
+
+# MacOS
+__MACOSX/
+.DS_Store
+
+# JetBrains IDEs and Fleet
+.idea/
+.fleet/
+
+# Visual Studio Code
+.vscode/
+
+# Project
+bin/
+*.exe
+main
+mkpasswd
