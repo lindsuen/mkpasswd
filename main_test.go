@@ -1,3 +1,9 @@
+// mkpasswd - main_test.go
+// Copyright (C) 2023 LindSuen <lindsuen@foxmail.com>
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 package main
 
 import (
