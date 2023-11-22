@@ -1,7 +1,6 @@
 # mkpasswd
 
-A command line tool for generating random passwords.  
-Life is hard, just smile. :smile:
+A command line tool for generating random passwords.
 
 ## Features
 
