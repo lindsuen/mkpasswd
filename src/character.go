@@ -15,7 +15,7 @@ func selectCharacters(s []rune, l *[]rune) {
 	}
 }
 
-// shuffleString shuffles the final string.
+// shuffleString shuffles the final combined string.
 func shuffleString(r *[]rune) string {
 	for i := len(*r) - 1; i >= 0; i-- {
 		num := rand.Intn(len(*r))

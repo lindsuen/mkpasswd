@@ -1,6 +1,6 @@
 package src
 
-// Password defines the struct of password.
+// Password defines the property of a password.
 type Password struct {
 	Quantity  uint64
 	Length    uint64
