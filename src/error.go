@@ -5,8 +5,9 @@ import (
 	"os"
 )
 
-func HandleInputError(Len uint64, numLen uint64, charLen uint64) {
-	if numLen > Len || charLen > Len {
+// HandleInputError handles the error of input parameters.
+func HandleInputError(totalLength uint64, numLength uint64, charLength uint64) {
+	if numLength > totalLength || charLength > totalLength {
 		fmt.Println("The values of -n and -c must be less than the value of -l.")
 		os.Exit(1)
 	}

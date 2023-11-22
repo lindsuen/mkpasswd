@@ -13,6 +13,6 @@ func main() {
 
 	var counter uint64
 	for counter = 0; counter < password.Quantity; counter++ {
-		fmt.Println(s.RandomString(password.Length, password.Number, password.Character))
+		fmt.Println(s.GenerateRandomString(password.Length, password.Number, password.Character))
 	}
 }

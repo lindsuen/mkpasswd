@@ -16,6 +16,6 @@ const (
 func BenchmarkMain(b *testing.B) {
 	var i uint64
 	for i = 0; i < N; i++ {
-		src.RandomString(l, n, c)
+		src.GenerateRandomString(l, n, c)
 	}
 }

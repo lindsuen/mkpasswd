@@ -3,39 +3,41 @@ package src
 import "math/rand"
 
 const (
-	defaultLetters   string = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	numberLetters    string = "1234567890"
-	characterLetters string = "!@#$%^&*+?"
+	defaultString   string = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	numberString    string = "1234567890"
+	characterString string = "!@#$%^&*+?"
 )
 
-func randCharacter(letter []rune, l *[]rune) []rune {
+// selectCharacters obtains the corresponding number of characters randomly.
+func selectCharacters(s []rune, l *[]rune) {
 	for n := range *l {
-		(*l)[n] = letter[rand.Intn(len(letter))]
+		(*l)[n] = s[rand.Intn(len(s))]
 	}
-	return *l
 }
 
-func shuffleArray(r *[]rune) []rune {
+// shuffleString shuffles the final string.
+func shuffleString(r *[]rune) string {
 	for i := len(*r) - 1; i >= 0; i-- {
 		num := rand.Intn(len(*r))
 		(*r)[i], (*r)[num] = (*r)[num], (*r)[i]
 	}
-	return *r
+	return string(*r)
 }
 
-func RandomString(Len uint64, numLen uint64, charLen uint64) string {
-	defl := make([]rune, Len-numLen-charLen)
-	numl := make([]rune, numLen)
-	charl := make([]rune, charLen)
+// GenerateRandomString generates a random string that matches the rules.
+func GenerateRandomString(totalLength uint64, numberLength uint64, characterLength uint64) string {
+	defFinalString := make([]rune, totalLength-numberLength-characterLength)
+	numFinalString := make([]rune, numberLength)
+	charFinalString := make([]rune, characterLength)
 
-	defLetters := []rune(defaultLetters)
-	numLetters := []rune(numberLetters)
-	charLetters := []rune(characterLetters)
+	defString := []rune(defaultString)
+	numString := []rune(numberString)
+	charString := []rune(characterString)
 
-	randCharacter(defLetters, &defl)
-	randCharacter(numLetters, &numl)
-	randCharacter(charLetters, &charl)
+	selectCharacters(defString, &defFinalString)
+	selectCharacters(numString, &numFinalString)
+	selectCharacters(charString, &charFinalString)
 
-	finalLetters := []rune(string(defl) + string(numl) + string(charl))
-	return string(shuffleArray(&finalLetters))
+	finalString := []rune(string(defFinalString) + string(numFinalString) + string(charFinalString))
+	return shuffleString(&finalString)
 }
