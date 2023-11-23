@@ -30,10 +30,16 @@ mkpasswd -N 5 -l 16 -n 4 -c 4
 Build separately in your operating system.
 
 ```sh
-go build .
+# Windows
+go build -o mkpasswd.exe .
 ```
 
-Build for all mainstream platforms.
+```sh
+# Linux or MacOS or FreeBSD
+go build -o mkpasswd .
+```
+
+Build for all mainstream platforms. Please see the `Makefile` for details.
 
 ```sh
 make all
