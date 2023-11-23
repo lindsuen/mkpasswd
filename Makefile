@@ -1,9 +1,9 @@
 APP := mkpasswd
 DIR := bin
 
-.PHONY: all clean build windows linux darwin freebsd
+.PHONY: all clean build windows linux macos freebsd
 
-all: windows linux darwin freebsd
+all: windows linux macos freebsd
 
 clean:
 	@if [ -d ${DIR} ]; then rm -rf ${DIR}/*; else exit 0; fi
@@ -27,11 +27,11 @@ linux:
 	@GOOS=linux GOARCH=arm64 go build -o ${DIR}/${APP} main.go
 	@cd ${DIR}/ && tar -zcf ${APP}-linux_arm64.tar.gz ${APP} && rm -rf ${APP} && cd ../
 
-darwin:
-	@# darwin-amd64:
+macos:
+	@# macos-amd64:
 	@GOOS=darwin GOARCH=amd64 go build -o ${DIR}/${APP} main.go
 	@cd ${DIR}/ && tar -zcf ${APP}-darwin_amd64.tar.gz ${APP} && rm -rf ${APP} && cd ../
-	@# darwin-arm64:
+	@# macos-arm64:
 	@GOOS=darwin GOARCH=arm64 go build -o ${DIR}/${APP} main.go
 	@cd ${DIR}/ && tar -zcf ${APP}-darwin_arm64.tar.gz ${APP} && rm -rf ${APP} && cd ../
 
