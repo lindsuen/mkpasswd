@@ -4,11 +4,10 @@ A command line tool for generating random passwords.
 
 ## Features
 
-- Command line with parameters.
-- Support for generating multiple passwords.
-- Arabic numerals supported `0-9`.
-- Special characters supported `!@#$%^&*+?`.
-- `Makefile` is supported.
+- Support command line parameters.
+- Support generating multiple passwords.
+- Support Arabic numerals `0-9`.
+- Support special characters `!@#$%^&*+?`.
 
 ## Usage
 
