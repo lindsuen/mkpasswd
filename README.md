@@ -38,7 +38,7 @@ go build -o mkpasswd.exe .
 go build -o mkpasswd .
 ```
 
-Build for all mainstream platforms. Please see the `Makefile` for details. _Releases are built on the Debian 12 bookworm operating system._
+Build for all mainstream platforms. Please see the `Makefile` for details. Releases are built on the _Debian 12 bookworm_ operating system.
 
 ```sh
 make all
