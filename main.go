@@ -9,7 +9,7 @@ package main
 import (
 	"fmt"
 
-	s "github.com/lindsuen0/mkpasswd/src"
+	s "github.com/lindsuen/mkpasswd/src"
 )
 
 func main() {

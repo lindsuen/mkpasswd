@@ -1,3 +1,3 @@
-module github.com/lindsuen0/mkpasswd
+module github.com/lindsuen/mkpasswd
 
 go 1.21.7

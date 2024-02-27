@@ -9,7 +9,7 @@ package main
 import (
 	"testing"
 
-	"github.com/lindsuen0/mkpasswd/src"
+	"github.com/lindsuen/mkpasswd/src"
 )
 
 const (
