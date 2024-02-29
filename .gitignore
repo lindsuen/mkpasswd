@@ -13,7 +13,7 @@ __MACOSX/
 .vscode/
 
 # Project
-bin/
+/bin
 *.exe
 *.exe~
 main
