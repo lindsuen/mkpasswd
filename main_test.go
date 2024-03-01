@@ -8,8 +8,6 @@ package main
 
 import (
 	"testing"
-
-	"github.com/lindsuen/mkpasswd/src"
 )
 
 const (
@@ -22,6 +20,6 @@ const (
 func BenchmarkMain(b *testing.B) {
 	var i uint64
 	for i = 0; i < N; i++ {
-		src.GenerateRandomString(l, n, c)
+		createRandomString(l, n, c)
 	}
 }
