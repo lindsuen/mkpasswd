@@ -1,5 +1,7 @@
 # mkpasswd
 
+![GitHub License](https://img.shields.io/github/license/lindsuen/mkpasswd)
+
 A command line tool for generating random passwords.
 
 ## Features
