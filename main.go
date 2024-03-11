@@ -61,7 +61,7 @@ func shuffleString(r *[]rune) string {
 	return string(*r)
 }
 
-// createRandomString generates a random string that matches the rules.
+// createRandomString creates a random string that matches the rules.
 func createRandomString(totalLength uint64, numberLength uint64, characterLength uint64) string {
 	defFinalString := make([]rune, totalLength-numberLength-characterLength)
 	numFinalString := make([]rune, numberLength)
