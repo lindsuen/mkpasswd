@@ -1,11 +1,12 @@
-name: build
+name: release
 
 on:
   push:
-    branches: ["master"]
+    tags:
+      - v*
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,5 +18,10 @@ jobs:
           go-version-file: go.mod
           cache-dependency-path: go.sum
 
-      - name: Build
-        run: go build .
+      - name: Make
+        run: make all
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: bin/*
