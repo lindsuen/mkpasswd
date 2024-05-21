@@ -49,4 +49,4 @@ make all
 
 ## License
 
-GPL-3.0 license
+[GPL-3.0 license](https://github.com/lindsuen/mkpasswd/blob/master/LICENSE)
