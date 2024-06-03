@@ -3,7 +3,7 @@
 [![build](https://github.com/lindsuen/mkpasswd/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/lindsuen/mkpasswd/actions/workflows/build.yml)
 ![GitHub License](https://img.shields.io/github/license/lindsuen/mkpasswd)
 
-A command line tool for generating random passwords.
+Command line tool for generating random passwords. It's just a small tool in daily work. 😄
 
 ## Features
 
