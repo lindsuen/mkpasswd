@@ -3,7 +3,7 @@
 [![build](https://github.com/lindsuen/mkpasswd/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/lindsuen/mkpasswd/actions/workflows/build.yml)
 ![GitHub License](https://img.shields.io/github/license/lindsuen/mkpasswd)
 
-Command line tool for generating random passwords. It's just a small tool in daily work. 😄
+Command line tool for generating random passwords. It's just a small tool in daily work. :smile:
 
 ## Features
 
@@ -29,7 +29,7 @@ mkpasswd -N 5 -l 16 -n 4 -c 4
 
 ## Build
 
-Build separately in your operating system.
+Build separately in your operating system. To start building mkpasswd, install Go 1.20 or above.
 
 ```sh
 # Windows
