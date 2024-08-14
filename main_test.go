@@ -11,15 +11,13 @@ import (
 )
 
 const (
-	N uint64 = 999999
 	l uint64 = 16
 	n uint64 = 4
 	c uint64 = 4
 )
 
-func BenchmarkMain(b *testing.B) {
-	var i uint64
-	for i = 0; i < N; i++ {
+func BenchmarkCreateRandomString(b *testing.B) {
+	for i := 0; i < b.N; i++ {
 		createRandomString(l, n, c)
 	}
 }
