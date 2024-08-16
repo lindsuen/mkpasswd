@@ -33,12 +33,12 @@ Build separately in your operating system. To start building mkpasswd, install G
 
 ```sh
 # Windows
-$ go build -o mkpasswd.exe -ldflags "-s -w" .
+$ go build -o bin/mkpasswd.exe -ldflags "-s -w" .
 ```
 
 ```sh
 # Linux or MacOS or FreeBSD
-$ go build -o mkpasswd -ldflags "-s -w" .
+$ go build -o bin/mkpasswd -ldflags "-s -w" .
 ```
 
 Build for all mainstream platforms. Please see the `Makefile` for details.
