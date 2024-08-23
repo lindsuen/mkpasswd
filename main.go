@@ -37,10 +37,14 @@ func setParameter(p *password) {
 }
 
 // handleInputError handles the error of input parameters.
-// The values of -n and -c must be less than the value of -l.
+// The value of -n and -c must be less than the value of -l. And, the sum of -n and -c must
+// be less than the value of -l.
 func handleInputError(totalLength uint64, numLength uint64, charLength uint64) {
-	if numLength > totalLength || charLength > totalLength {
-		fmt.Println("The values of -n and -c must be less than the value of -l.")
+	if numLength >= totalLength || charLength >= totalLength {
+		fmt.Println("The value of -n and -c must be less than the value of -l.")
+		os.Exit(1)
+	} else if numLength+charLength >= totalLength {
+		fmt.Println("The sum of -n and -c must be less than the value of -l.")
 		os.Exit(1)
 	}
 }
