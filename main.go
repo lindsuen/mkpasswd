@@ -19,6 +19,12 @@ const (
 	characterString string = "!@#$%^&*+?"
 )
 
+var (
+	defString  = []rune(defaultString)
+	numString  = []rune(numberString)
+	charString = []rune(characterString)
+)
+
 // password defines the property of a password.
 type password struct {
 	quantity  uint64
@@ -71,15 +77,11 @@ func CreateRandomString(totalLength uint64, numberLength uint64, characterLength
 	numFinalString := make([]rune, numberLength)
 	charFinalString := make([]rune, characterLength)
 
-	defString := []rune(defaultString)
-	numString := []rune(numberString)
-	charString := []rune(characterString)
-
 	selectCharacters(defString, &defFinalString)
 	selectCharacters(numString, &numFinalString)
 	selectCharacters(charString, &charFinalString)
 
-	finalString := []rune(string(defFinalString) + string(numFinalString) + string(charFinalString))
+	finalString := append(append(defFinalString, numFinalString...), charFinalString...)
 	return shuffleString(&finalString)
 }
 
