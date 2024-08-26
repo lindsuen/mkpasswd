@@ -18,6 +18,6 @@ const (
 
 func BenchmarkCreateRandomString(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		CreateRandomString(l, n, c)
+		createRandomString(l, n, c)
 	}
 }

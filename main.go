@@ -71,8 +71,8 @@ func shuffleString(r *[]rune) string {
 	return string(*r)
 }
 
-// CreateRandomString creates a random string that matches the rules.
-func CreateRandomString(totalLength uint64, numberLength uint64, characterLength uint64) string {
+// createRandomString creates a random string that matches the rules.
+func createRandomString(totalLength uint64, numberLength uint64, characterLength uint64) string {
 	defFinalString := make([]rune, totalLength-numberLength-characterLength)
 	numFinalString := make([]rune, numberLength)
 	charFinalString := make([]rune, characterLength)
@@ -92,6 +92,6 @@ func main() {
 
 	var counter uint64
 	for counter = 0; counter < password.quantity; counter++ {
-		fmt.Println(CreateRandomString(password.length, password.number, password.character))
+		fmt.Println(createRandomString(password.length, password.number, password.character))
 	}
 }
