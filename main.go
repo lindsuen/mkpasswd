@@ -42,10 +42,10 @@ func setParameter(p *password) {
 	flag.Parse()
 }
 
-// handleInputError handles the error of input parameters.
+// inputErrorHandling handles the error of input parameters.
 // The value of -n and -c must be less than the value of -l. And, the sum of -n and -c must
 // be less than the value of -l.
-func handleInputError(totalLength uint64, numLength uint64, charLength uint64) {
+func inputErrorHandling(totalLength uint64, numLength uint64, charLength uint64) {
 	if numLength >= totalLength || charLength >= totalLength {
 		fmt.Println("The value of -n and -c must be less than the value of -l.")
 		os.Exit(1)
@@ -88,7 +88,7 @@ func createRandomString(totalLength uint64, numberLength uint64, characterLength
 func main() {
 	password := new(password)
 	setParameter(password)
-	handleInputError(password.length, password.number, password.character)
+	inputErrorHandling(password.length, password.number, password.character)
 
 	var counter uint64
 	for counter = 0; counter < password.quantity; counter++ {
