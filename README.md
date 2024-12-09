@@ -1,6 +1,5 @@
 # mkpasswd
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/lindsuen/mkpasswd/ferretdb.svg)](https://pkg.go.dev/github.com/lindsuen/mkpasswd)
 [![Go Report Card](https://goreportcard.com/badge/github.com/lindsuen/mkpasswd)](https://goreportcard.com/report/github.com/lindsuen/mkpasswd)
 [![build](https://github.com/lindsuen/mkpasswd/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/lindsuen/mkpasswd/actions/workflows/build.yml)
 ![GitHub Release](https://img.shields.io/github/v/release/lindsuen/mkpasswd)
