@@ -1,9 +1,9 @@
 # mkpasswd
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/lindsuen/mkpasswd?style=flat-square)](https://goreportcard.com/report/github.com/lindsuen/mkpasswd)
-[![build](https://img.shields.io/github/actions/workflow/status/lindsuen/mkpasswd/build.yml?branch=master&style=flat-square)](https://github.com/lindsuen/mkpasswd/actions/workflows/build.yml)
-[![GitHub Release](https://img.shields.io/github/v/release/lindsuen/mkpasswd?style=flat-square)](https://github.com/lindsuen/mkpasswd/releases)
-[![GitHub License](https://img.shields.io/github/license/lindsuen/mkpasswd?style=flat-square)](https://github.com/lindsuen/mkpasswd/blob/master/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/lindsuen/mkpasswd)](https://goreportcard.com/report/github.com/lindsuen/mkpasswd)
+[![build](https://img.shields.io/github/actions/workflow/status/lindsuen/mkpasswd/build.yml?branch=master)](https://github.com/lindsuen/mkpasswd/actions/workflows/build.yml)
+[![GitHub Release](https://img.shields.io/github/v/release/lindsuen/mkpasswd)](https://github.com/lindsuen/mkpasswd/releases)
+[![GitHub License](https://img.shields.io/github/license/lindsuen/mkpasswd)](https://github.com/lindsuen/mkpasswd/blob/master/LICENSE)
 
 A command line tool for generating random passwords. It's just a small tool in daily work. :smile:
 
