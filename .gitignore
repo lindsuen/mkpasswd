@@ -16,5 +16,7 @@ __MACOSX/
 /bin
 *.exe
 *.exe~
+*.dll
+*.so
 main
 mkpasswd
